@@ -10,6 +10,7 @@ const RegisterScreen = () => {
     const [password, setPassword] = useState('');
 
     return (
+        
         <View style={styles.content}>
             <Input
                 placeholder='Ingrese su Nombre'
@@ -21,7 +22,7 @@ const RegisterScreen = () => {
 
             <Input
                 placeholder='Imagen del Perfil'
-                label='Imagen del Perfil'
+                label='Url Imagen'
                 leftIcon={{ type: 'material', name: 'camera' }}
                 value={imageURL}
                 onChangeText={text => setImageUrl(text)}
